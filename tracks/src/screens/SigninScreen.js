@@ -12,7 +12,7 @@ const SigninScreen = ({ navigation }) => {
     return (
     <View style={styles.container}>
     
-     <NavigationEvents onWillBlur={ clearErrorMessage }/>
+    <NavigationEvents onWillBlur={ clearErrorMessage }/>
 
        <AuthForm
         headerTitle="Sign In for Tracker"
