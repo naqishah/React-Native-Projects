@@ -13,6 +13,7 @@ import * as React from 'react';
 import { Icon } from 'react-native-elements';
 
 import { blue_grey_700, okapi_background_color } from '../styles/Colors';
+import { bottomTabTextMyOkapi, bottomTabTextFindAgent, bottomTabTextServices, bottomTabTextHelp } from '../Common/Strings';
 
 const TabNavigatorConfig = {
     initialRouteName: 'Login',
@@ -31,7 +32,7 @@ const RouteConfigs = {
     Login: {
         screen: LoginScreen,
         navigationOptions: {
-            tabBarLabel: 'My Okapi',
+            tabBarLabel: bottomTabTextMyOkapi,
             tabBarIcon: () => (
                 <Icon name="lock" type="font-awesome" color={okapi_background_color} style={{marginTop:5}}/>
               )
@@ -40,7 +41,7 @@ const RouteConfigs = {
     FindAgent: {
         screen: FindAgentScreen,
         navigationOptions: {
-            tabBarLabel: 'Find Agent',
+            tabBarLabel: bottomTabTextFindAgent,
             tabBarIcon: () => (
                 <Icon name="map-marker" type="font-awesome" color={okapi_background_color} style={{marginTop:5}}/>
               )
@@ -49,7 +50,7 @@ const RouteConfigs = {
     Services: {
         screen: ServicesScreen,
         navigationOptions: {
-            tabBarLabel: 'Services',
+            tabBarLabel: bottomTabTextServices,
             tabBarIcon: () => (
                 <Icon name="briefcase" type="font-awesome" color={okapi_background_color} style={{marginTop:5}}/>
               )
@@ -58,7 +59,7 @@ const RouteConfigs = {
     Help: {
         screen: HelpScreen,
         navigationOptions: {
-            tabBarLabel: 'Help',
+            tabBarLabel: bottomTabTextHelp,
             tabBarIcon: () => (
                 <Icon name="info" type="font-awesome" color={okapi_background_color} style={{marginTop:5}}/>
               )

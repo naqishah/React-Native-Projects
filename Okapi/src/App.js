@@ -23,7 +23,7 @@ class App extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ showSplashScreen: false });
-          }, 3000);
+          }, 2000);
       }
 
     render() {

@@ -273,3 +273,5 @@ export const blue_grey_900 = '#263238';
 export const blue_grey_1000 = '#11171a';
 
 export const okapi_background_color = '#F8F7F2';
+export const login_input_borderColor = '#cfc8bd';
+export const login_input_backgroundColor = '#f7f2e3';

@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 import { blue_grey_700 } from '../styles/Colors';
 
-const LinkButton = ({ title }) => {
+const LinkButton = ({ title, marginTop }) => {
 
     return (
         <View style={styles.container}>
@@ -17,8 +17,8 @@ const LinkButton = ({ title }) => {
 const styles = StyleSheet.create({
 
     container: {
-        flex: 1,
         alignItems: 'center',
+        marginTop: 8
     },
     textStyle: {
         alignSelf: 'center',

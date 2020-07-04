@@ -3,16 +3,15 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 import { light_green_700, light_green_100 } from '../styles/Colors';
 
-const Button = ({ buttonMarginTop, title }) => {
+const Button = ({ buttonMarginTop, title, onPress }) => {
 
     return (
         <>
         <View style={{
-            flex: 1,
             alignItems: 'center',
             marginTop: buttonMarginTop,
             }}>
-            <TouchableOpacity style={styles.buttonContainerStyle}>
+            <TouchableOpacity style={styles.buttonContainerStyle} onPress={onPress}>
         <Text style={styles.textStyle}>{title}</Text>
             </TouchableOpacity>
         </View>
@@ -39,12 +38,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius: 5
     },
-    container: {
-        flex: 1,
-        alignItems: 'center',
-    },
 });
 
-
-
-export { Button };
+export default Button;
