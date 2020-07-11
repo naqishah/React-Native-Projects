@@ -41,7 +41,7 @@ class LoginForm extends Component {
                         <TextInput style={inputStyle} />
                         <Spacer />
                         <Text style={textStyle}>{passwordCapsColon}</Text>
-                        <TextInput style={inputStyle} />
+                        <TextInput style={inputStyle} secureTextEntry={true} />
 
                         <View style={checkBoxViewStyle}>
                             <Checkbox />
@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'center',
         backgroundColor: login_input_backgroundColor,
+        fontSize: 18
     },
     checkBoxViewStyle: {
         flexDirection: 'row',
